@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    src: url('KoddiUDOnGothic-ExtraBold.eot');
+    src: url('KoddiUDOnGothic-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('KoddiUDOnGothic-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    src: url('KoddiUDOnGothic-Bold.eot');
+    src: url('KoddiUDOnGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('KoddiUDOnGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    src: url('KoddiUDOnGothic-Regular.eot');
+    src: url('KoddiUDOnGothic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('KoddiUDOnGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
