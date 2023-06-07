@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>끌레도르 정기구독</title>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script>
+        window.onload = function (){
+            let hd = document.querySelector('header');
+            let hdMobile = hd.getElementsByTagName('nav')[1];
+            let menuMobile = hd.getElementsByTagName('nav')[2];
+            
+            let menuOpen = hd.querySelector('.menu_open');
+            let menuClose = hd.querySelector('.menu_close');
+
+            menuMobile.style.display='none';
+            menuOpen.onclick = function (){
+                if(menuMobile.style.display == 'none') {
+                    menuMobile.style.display = 'block';
+                }
+            }
+
+            menuClose.onclick = function (){
+                if (menuMobile.style.display == 'block') {
+                    menuMobile.style.display = 'none';
+                }
+            }
+
+            let shop = hd.querySelector('#shop');
+            let shopOpen = shop.querySelector('#shop_open');
+            let shopDepth02 = shop.querySelector('.depth02');
+
+            shopDepth02.style.display = 'none';
+            shopOpen.onclick = function (){
+                if (shopDepth02.style.display == 'none'){
+                    shopDepth02.style.display = 'block';
+                    shopOpen.src = "img/icons8-subtract-30.png";
+                }else (shopDepth02.style.display = 'none',
+                shopOpen.src = "img/🦆 icon _add_.png");
+            }//메뉴 end         
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <p>"매달 집으로 찾아오는 감동, 프리미엄 아이스크림 <strong>끌레도르</strong>"</p>
+        </div> <!-- .header_top end -->
+        <div class="header_main">
+            <h1>
+                <a href="https://mentoswon.github.io/cledor/">
+                    <img src="img/logo.png" alt="로고"/>
+                </a>
+            </h1>
+            <nav class="pc">
+                <ul class="left_gnb">
+                    <li><a href="#">정기구독</a></li>
+                    <li><a href="#">STORY</a></li>
+                    <li><a href="https://mentoswon.github.io/cledor_product/">SHOP</a></li>
+                </ul> <!-- .left_gnb -->
+
+                <ul class="right_gnb">
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul> <!-- .left_gnb -->
+            </nav> <!-- .pc end -->
+
+            <nav class="mobile">
+                <img class="menu_open" src="img/🦆 icon _menu_.png" alt="메뉴"/>
+                <ul>
+                    <li><img src="img/user.png" alt="유저"></li>
+                    <li><img src="img/🦆 icon _shopping bag_.png" alt="장바구니"></li>
+                </ul>
+            </nav> <!-- .mobile-->
+
+            <nav class="mobile menu">
+                <div class="menu_top">
+                    <img class="menu_close" src="img/🦆 icon _close outline_.png" alt="메뉴 닫기">
+                    <ul>
+                        <li><img src="img/user.png" alt="유저"></li>
+                        <li><img src="img/🦆 icon _shopping bag_.png" alt="장바구니"></li>
+                    </ul>
+                </div> <!-- menu_top end -->
+                <div>
+                    <ul>
+                        <li class="depth01">
+                            <div>
+                                <div>
+                                    <img src="img/🦆 icon _truck_.png" alt=""/>
+                                    <h3>정기구독</h3>
+                                </div>
+                                <img src="img/icons8-less-than-30.png" alt=""/>
+                            </div>
+                        </li> <!-- .depth01 end -->
+
+                        <li class="depth01">
+                            <div>
+                                <div>
+                                    <img src="img/🦆 icon _document text 1_.png" alt=""/>
+                                    <h3>STORY</h3>
+                                </div>
+                                <img src="img/icons8-less-than-30.png" alt=""/>
+                            </div>
+                        </li> <!-- .depth01 end -->
+
+                        <li id="shop" class="depth01">
+                            <div>
+                                <div>
+                                    <img src="img/🦆 icon _plus square_.png" alt=""/>
+                                    <h3><a href="https://mentoswon.github.io/cledor_product/"> SHOP</a></h3>
+                                </div>
+                                <img id="shop_open" src="img/🦆 icon _add_.png" alt=""/>
+                            </div>
+                            <ul class="depth02">
+                                <li>바 (7 items)</li>
+                                <li>파인트 (5 items)</li>
+                                <li>컵 (4 items)</li>
+                            </ul> <!-- .depth02 end -->
+                        </li> <!-- .depth01 end -->
+
+                        <li class="depth01">
+                            <div>
+                                <div>
+                                    <img src="img/🦆 icon _question mark circle_.png" alt=""/>
+                                    <h3>고객센터</h3>
+                                </div>
+                                <img src="img/icons8-less-than-30.png" alt=""/>
+                            </div>
+                        </li> <!-- .depth01 end -->
+                    </ul>
+                </div>
+            </nav> <!-- .menu end -->
+        </div> <!-- .header_main end -->
+    </header>
+
+    <section class="main_visual">
+        <figure>
+            <img src="img/goods_list_banner.jpg" alt="메인비주얼"/>
+        </figure>
+    </section> <!-- .main_visual end -->
+
+    <section class="subscribe">
+        <div class="inner">
+            <h1>정기구독</h1>
+            <div class="list">
+                <figure>
+                    <img src="img/subscribe.jpg" alt=""/>
+                </figure>
+                <div>
+                    <div class="title">
+                        <h2>매달 집으로 찾아오는 감동</h2>
+                        <button><img src="img/🦆 icon _share_.png" alt=""></button>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <h3>구독금액</h3>
+                                <div class="price">
+                                    <div>S size 19,900원</div>
+                                    <div>L size 24,900원</div>
+                                </div> <!-- price end -->
+                            </li>
+
+                            <li>
+                                <h3>결제 방법</h3>
+                                <div class="payment">
+                                    <p><input type="radio" name="payment" checked> <label>선결제</label></p>
+                                    <p><input type="radio" name="payment"> <label>정기결제</label></p>
+                                </div> <!-- .payment -->
+                            </li>
+
+                            <li>
+                                <h3>배송주기</h3>
+                                <select>
+                                    <option>2주에 한 번</option>
+                                    <option>1달에 한 번</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <h3>구독기간</h3>
+                                <select>
+                                    <option>1회</option>
+                                    <option>2회</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <h3>희망 배송일</h3>
+                                <input class="day" type="text" placeholder="희망 배송일을 입력하세요.">
+                            </li>
+                        </ul>
+                        <p>* 제주, 도서산간, 군부대 배송 불가</p>
+                        <button class="submit">정기구독 신청하기</button>
+                    </div> <!-- .content end -->
+                </div>
+            </div> <!-- .list end -->
+            <div class="banner">
+                <figure>
+                    <img src="img/sub_warning.jpg" alt=""/>
+                </figure>
+            </div> <!-- .banner end -->
+        </div>  <!-- .inner end -->
+    </section> <!-- .subscribe end -->
+
+    <section class="des01">
+        <div class="inner">
+            <div class="box">
+                <div class="cont">
+                    <h3>끌레도르 정기구독이 좋은 이유</h3>
+                    <div>
+                        <figure>
+                            <img src="img/icecream1.jpg" alt=""/>
+                        </figure>
+                        <div class="text">
+                            <div class="text_inner">
+                                <img src="img/🦆 icon _check_.png" alt="">
+                                <div>
+                                    <h4>다양한 상품 구성</h4>
+                                    <p>다양하게 맛보는 다양한 끌레도르</p>
+                                </div>
+                            </div> <!-- .text_inner end -->
+
+                            <div class="text_inner">
+                                <img src="img/🦆 icon _check_.png" alt="">
+                                <div>
+                                    <h4>반값 할인 혜택</h4>
+                                    <p>부담없는 가격으로 풍성하게 즐기는 끌레도르</p>
+                                </div>
+                            </div> <!-- .text_inner end -->
+
+                            <div class="text_inner">
+                                <img src="img/🦆 icon _check_.png" alt="">
+                                <div>
+                                    <h4>국내산 원유 사용</h4>
+                                    <p>국내산 원유를 사용한 프리미엄 아이스크림</p>
+                                </div>
+                            </div> <!-- .text_inner end -->
+                        </div> <!-- .text end -->
+                    </div>
+                </div> <!-- .cont end -->
+
+                <div class="cont">
+                    <h3>주문 및 배송 문의</h3>
+                    <div class="text">
+                        <div class="text_inner">
+                            <img src="img/🦆 icon _check_.png" alt="">
+                            <div>
+                                <h4>전화 또는 1:1 문의 게시판을 통해 남겨주시면 확인 후 답변 드리겠습니다. </h4>
+                            </div>
+                        </div> <!-- .text_inner end -->
+
+                        <div class="text_inner">
+                            <img src="img/🦆 icon _check_.png" alt="">
+                            <div>
+                                <h4>문의전화: <span> 070-7760-0171</span></h4>
+                            </div>
+                        </div> <!-- .text_inner end -->
+
+                        <div class="text_inner">
+                            <img src="img/🦆 icon _check_.png" alt="">
+                            <div>
+                                <h4>문의전화 응대시간: <span> 오전 10시 ~ 오후 5시 (점심시간 오후 1시 ~ 2시)</span></h4>
+                            </div>
+                        </div> <!-- .text_inner end -->
+                    </div> <!-- .text end -->
+                </div> <!-- .cont end -->
+            </div> <!-- .box -->
+        </div> <!-- .inner end -->
+    </section> <!-- .des01 end -->
+
+    <section class="des02">
+        <div class="inner">
+            <div class="cont">
+                <h3>포장</h3>
+                <div class="text">
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>모든 제품은 안전하게 포장되어 발송됩니다. </h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>녹지 않도록 드라이아이스와 함께 포장되어 발송되니 개봉시 피부에 닿지 
+                                않도록 주의가 필요합니다.</h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+                </div> <!-- .text end -->
+            </div> <!-- .cont end -->
+            <div class="cont">
+                <h3>발송</h3>
+                <div class="text">
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>배송 택배사: CJ 대한 통운 </h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>택배는 출고후 익일 배송완료 됩니다.</h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>배송완료시간은 지역 택배 배송현황에 따라 달라질 수 있으며, 완료 시간  지정은 불가능합니다.</h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+                </div> <!-- .text end -->
+            </div> <!-- .cont end -->
+            <div class="cont">
+                <h3>변경 및 취소</h3>
+                <div class="text">
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>배송 준비 상태인 주문 건은 포장 및 운송 작업이 완료되어 취소 및
+                                주문 정보 변경이 어렵습니다. </h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>문의 게시판을 통한 주문취소 및 배송정보 변경은 수시확인이 
+                                어렵습니다. 반드시 고객센터로 연락하여 처리 부탁드립니다.</h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+                </div> <!-- .text end -->
+            </div> <!-- .cont end -->
+
+            <div class="cont">
+                <h3>파손/오출고</h3>
+                <div class="text">
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>수령 즉시 제품 이상 여부를 확인하시어 제품과 아이스박스 및 송장을
+                                사진 촬영하여 아래로 접수해주세요. </h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>사진 전송</h4>
+                            <p>홈페이지 게시판 접수:<span> 고객센터 > 1:1 문의</span></p>
+                        </div>
+                    </div> <!-- .text_inner end -->
+                </div> <!-- .text end -->
+            </div> <!-- .cont end -->
+
+            <div class="cont">
+                <h3>교환/환불/반품</h3>
+                <div class="text">
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>반품/환불은 상품 수령 후 상품 하자로 인한 사유 발생시에만 가능합니다. </h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>파손 및 누락건은 고객센터로 접수 후 교환 또는 추가발송으로 처리됩니다.</h4>
+                        </div>
+                    </div> <!-- .text_inner end -->
+
+                    <div class="text_inner">
+                        <img src="img/🦆 icon _check_.png" alt="">
+                        <div>
+                            <h4>반품/환불/교환이 불가능한 경우</h4>
+                            <p>고객님 실수로 인한 멸실 또는 상품의 가치가 없어진 경우
+                                고객님의 단순 변심, 잘못된 배송정보 기재 (주소, 전화번호등)로 배송이
+                                불가한 경우 배송 시 부재로 인해 연락이 어렵거나, 직접 수령이 아닌
+                                상황에서 제품 수령 지연으로 변질/파손/분실된 경우</p>
+                        </div>
+                    </div> <!-- .text_inner end -->
+                </div> <!-- .text end -->
+            </div> <!-- .cont end -->
+        </div> <!-- .inner end -->
+    </section>
+
+
+
+
+    <div class="footer pc">
+        <div class="inner">
+            <ul class="top">
+                <li><a href="#"><strong> 고객센터</strong></a></li>
+                <li><a href="#"><strong>이용약관</strong></a></li>
+                <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+            </ul> <!-- .top end -->
+
+            <div class="list">
+                <ul>
+                    <li><strong>(주)빙그레</strong></li>
+                    <li>주소 : 서울특별시 중구 서소문로 11길 19 </li>
+                    <li>사업자등록번호 : 132-81-00631</li>
+                    <li>통신판매업신고번호 : 다산-0172</li>
+                </ul>
+                <ul>
+                    <li><strong>웨스트윙</strong> </li>
+                    <li>대표 : 최순흠 </li>
+                    <li>주소 : 경상북도 영천시 올밤길 50</li>
+                    <li>사업자 등록번호 : 620-12-74347 [사업자정보확인]</li>
+                    <li>통신판매업신고번호 : 2017-경북영천-0027</li>
+                    <li>이메일 : info@westwing.kr</li>
+                </ul>
+                <ul>
+                    <li><strong>고객센터</strong></li>
+                    <li>TEL.<strong> 070-7760-0171 </strong></li>
+                    <li>운영시간 09:00 - 17:00</li>
+                    <li>점심시간 12:00 - 13:00</li>
+                    <li><span> 토요일/일요일/공휴일 휴무 </span></li>
+                </ul>
+            </div> <!-- .list end -->
+            <p>Copyright (주)빙그레 All rights reserved.</p>
+        </div> <!-- .inner end -->
+    </div> <!-- .footer pc end -->    
+
+    <div class="footer mobile">
+        <div class="inner">
+            <ul class="top">
+                <li><a href="#"><strong> 고객센터</strong></a></li>
+                <li><a href="#"><strong>이용약관</strong></a></li>
+                <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                <li><a href="#"><strong>(주)빙그레</strong></a></li>
+            </ul> <!-- .top end -->
+
+            <p>Copyright (주)빙그레 All rights reserved.</p>
+        </div> <!-- .inner end -->
+    </div> <!-- .footer end -->  
+</body>
+</html>
