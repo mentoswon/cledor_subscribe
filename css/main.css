@@ -322,7 +322,7 @@ header .header_main nav .right_gnb li {
 .des01 .inner .cont .text .text_inner {
     display: flex;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items:center;
     margin: 4rem 0;
 }
 .des01 .inner .cont .text .text_inner img {
@@ -358,7 +358,7 @@ header .header_main nav .right_gnb li {
 .des02 .inner .cont {
     border: 1px solid #8b8b8b;
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 8rem auto;
     padding: 3rem;
 }
@@ -376,7 +376,7 @@ header .header_main nav .right_gnb li {
 .des02 .inner .cont .text .text_inner {
     display: flex;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items: center;
     margin: 3rem 0;
 }
 .des02 .inner .cont .text .text_inner img {
@@ -691,6 +691,12 @@ header .header_main nav .right_gnb li {
     .des01 .inner .box .cont:nth-of-type(1) >div figure {
         height: 30vw;
     }
+    .des01 .inner .cont .text .text_inner img {
+        width: 4vw;
+    }
+    .des02 .inner .cont .text .text_inner img {
+        width: 3vw;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -710,10 +716,19 @@ header .header_main nav .right_gnb li {
     html,body {
         font-size: 34%;
     }
+    .subscribe .inner .list >div .content ul li .price div {
+        font-size: 2.3rem;
+    }
+    .subscribe .inner .list >div .content ul li .payment p {
+        font-size: 2.3rem;
+    }
     .des01 .inner .cont:first-child h3 {
         width: 90%;
     }
     .des01 .inner .box .cont:nth-of-type(1) >div figure {
         height: 35vw;
+    }
+    .des02 .inner .cont h3 {
+        top: -1rem;
     }
 }
