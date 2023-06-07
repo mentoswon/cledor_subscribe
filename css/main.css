@@ -688,6 +688,9 @@ header .header_main nav .right_gnb li {
         padding: 2rem;
         padding-top: 4rem;
     }
+    .des01 .inner .box {
+        padding: 3rem;
+    }
     .des01 .inner .box .cont:nth-of-type(1) >div figure {
         height: 30vw;
     }
